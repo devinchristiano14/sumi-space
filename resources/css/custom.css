@@ -1,0 +1,389 @@
+/* ==========================================================
+   SUMI SPACE WEBSITE
+========================================================== */
+
+:root{
+    --primary:#EE3833;
+    --primary-dark:#d92c27;
+    --dark:#1d1d1d;
+    --light:#f7f8fa;
+    --white:#ffffff;
+    --gray:#777;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#222;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    padding:18px 0;
+    transition:.3s;
+    background:transparent;
+}
+
+.navbar-scroll{
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar-brand img{
+    height:60px;
+}
+
+.nav-link{
+    font-weight:500;
+    margin-left:18px;
+    color:#333 !important;
+}
+
+.nav-link:hover{
+    color:var(--primary)!important;
+}
+
+.btn-sumi{
+    background:var(--primary);
+    color:#fff;
+    border-radius:40px;
+    padding:12px 30px;
+    border:none;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-sumi:hover{
+    background:var(--primary-dark);
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:120px;
+    background:#fafafa;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.hero-image{
+    border-radius:30px;
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+    max-height:650px;
+    object-fit:cover;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    font-size:42px;
+    font-weight:700;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-body{
+    padding:35px;
+}
+
+/* ================= PACKAGE ================= */
+
+#paket .card h4{
+    font-weight:700;
+}
+
+#paket .card h2{
+    margin:20px 0;
+}
+
+/* ================= PRICE ================= */
+
+#price .card{
+    text-align:center;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-img{
+    width:100%;
+    height:auto;
+    display:block;
+
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.gallery-img:hover{
+    transform:scale(1.03);
+}
+/* ================= FAQ ================= */
+
+.accordion-item{
+    border:none;
+    border-radius:15px!important;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.accordion-button{
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed){
+    background:var(--primary);
+    color:#fff;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:var(--primary);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:42px;
+    font-weight:700;
+}
+
+.cta p{
+    font-size:18px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#1d1d1d;
+    color:#fff;
+    padding:70px 0 20px;
+}
+
+footer h5{
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+footer p{
+    color:#ccc;
+}
+
+footer hr{
+    margin:40px 0;
+    border-color:#444;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero-image{
+    margin-top:40px;
+}
+
+.navbar-brand img{
+    height:50px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+}
+
+/* ================= BOOKING ================= */
+
+.tanggal-btn{
+
+    width:110px;
+
+    height:60px;
+
+    border-radius:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.tanggal-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.jam-btn{
+
+    width:90px;
+
+    height:50px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+#tanggal-container{
+
+    margin-bottom:20px;
+
+}
+
+#jam-container{
+
+    min-height:70px;
+
+}
+
+.tanggal-card{
+
+    width:110px;
+
+    height:110px;
+
+    border:2px solid #ddd;
+
+    border-radius:18px;
+
+    background:white;
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.tanggal-card:hover{
+
+    border-color:#EE3833;
+
+    transform:translateY(-5px);
+
+}
+
+.tanggal-card.active{
+
+    background:#EE3833;
+
+    color:white;
+
+    border-color:#EE3833;
+
+}
+
+.tanggal-card .hari{
+
+    font-size:13px;
+
+}
+
+.tanggal-card .tgl{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.tanggal-card .bulan{
+
+    font-size:14px;
+
+}
+
+/* ================= PRICE LIST ================= */
+
+#price table{
+
+    border-radius:20px;
+    overflow:hidden;
+
+}
+
+#price thead{
+
+    background:#EE3833;
+    color:#fff;
+
+}
+
+#price thead th{
+
+    padding:18px;
+    font-size:16px;
+
+}
+
+#price tbody td{
+
+    padding:18px;
+
+}
+
+#price tbody tr:hover{
+
+    background:#fff5f5;
+
+}
+

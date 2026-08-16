@@ -1,0 +1,202 @@
+body{
+    background:#f5f7fb;
+}
+
+.main-content{
+    background:f4f6f9;
+    min-height:calc(100vh - 72px);
+}
+
+/* =======================================================
+   SUMI SPACE - ADMIN PANEL
+======================================================= */
+
+:root{
+    --primary:#EE3833;
+    --primary-dark:#D62F2B;
+    --dark:#1F2328;
+    --light:#F5F6FA;
+    --white:#FFFFFF;
+    --border:#E9ECEF;
+}
+
+body{
+    background:var(--light);
+}
+
+/* ==========================================
+   LAYOUT
+========================================== */
+
+.admin-wrapper{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+    width:260px;
+    background:var(--dark);
+    color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar-logo{
+    width:140px;
+    display:block;
+    margin:30px auto;
+}
+
+.sidebar-menu{
+    list-style:none;
+    margin:0;
+    padding:0 15px;
+}
+
+.sidebar-menu li{
+    margin-bottom:8px;
+}
+
+.sidebar-menu li a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:12px;
+    font-weight:500;
+    transition:.25s;
+}
+
+.sidebar-menu li a:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.sidebar-footer{
+    margin-top:auto;
+    padding:20px 15px;
+}
+
+.sidebar-footer .btn{
+    width:100%;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.admin-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    min-height:100vh;
+}
+
+/* ==========================================
+   TOPBAR
+========================================== */
+
+.topbar{
+    height:70px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    border-bottom:1px solid var(--border);
+}
+
+.topbar h4{
+    margin:0;
+    font-weight:600;
+}
+
+.admin-user{
+    font-weight:500;
+    color:#666;
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.main-content{
+    padding:30px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead th{
+    background:#fafafa;
+    font-weight:600;
+    border-bottom:2px solid var(--border);
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-sumi{
+    background:var(--primary);
+    color:#fff;
+    border:none;
+}
+
+.btn-sumi:hover{
+    background:var(--primary-dark);
+    color:#fff;
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+    border-radius:20px;
+    padding:7px 12px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+    .sidebar{
+        transform:translateX(-100%);
+    }
+
+    .admin-content{
+        margin-left:0;
+        width:100%;
+    }
+
+}
