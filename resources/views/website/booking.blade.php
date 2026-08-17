@@ -60,7 +60,7 @@ Booking Studio
 
 @endif
 
-<form action="{{ route('booking.store') }}" method="POST">
+<form action="/booking" method="POST">
 
 @csrf
 
