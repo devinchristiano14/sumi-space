@@ -117,7 +117,14 @@
                         </form>
 
                         @endif
+                        <a
+                        href="{{ route('booking.show',$booking->id) }}"
+                        class="btn btn-info btn-sm">
 
+                        Detail
+
+                        </a>
+                        
                         <a
                             href="{{ route('booking.edit',$booking->id) }}"
                             class="btn btn-warning btn-sm">

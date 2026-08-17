@@ -28,7 +28,7 @@ class Booking extends Model
 
     public function paket()
     {
-        return $this->belongsTo(PaketFoto::class);
+        return $this->belongsTo(PaketFoto::class, 'paket_foto_id', 'id');
     }
 
     public function jadwal()

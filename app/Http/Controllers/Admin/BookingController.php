@@ -95,7 +95,7 @@ Terima kasih telah melakukan booking di
     public function show($id)
     {
         $booking = Booking::with([
-            'paketFoto',
+            'paket',
             'jadwal'
         ])->findOrFail($id);
 

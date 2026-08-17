@@ -31,7 +31,7 @@
 
             <tr>
                 <th>Paket</th>
-                <td>{{ $booking->paketFoto->nama_paket }}</td>
+                <td>{{ $booking->paket->nama_paket }}</td>
             </tr>
 
             <tr>
@@ -41,7 +41,7 @@
 
             <tr>
                 <th>Jam</th>
-                <td>{{ $booking->jadwal->jam }}</td>
+                <td>{{ substr($booking->jadwal->jam, 0, 5) }}</td>
             </tr>
 
             <tr>
@@ -51,7 +51,13 @@
 
             <tr>
                 <th>Membawa Pet</th>
-                <td>{{ $booking->bawa_pet }}</td>
+                <td>
+                    @if($booking->bawa_pet == 1)
+                        Ya
+                    @else
+                        Tidak
+                    @endif
+                </td>
             </tr>
 
             <tr>
